@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img {
+  vertical-align: middle;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7cd75;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+.container {
+  padding: 40px 25px 40px 40px;
+}
+
+.main {
+  width: 800px;
+  height: 450px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 100px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.section-wallets {
+  width: 37.5%;
+  background-color: #f2f2f2;
+  overflow-x: auto;
+}
+
+.section-balance {
+  width: 62.5%;
+  background-color: #fff;
+  overflow-x: auto;
+}
+
+.section-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-top__plus {
+  cursor: pointer;
+}
+
+.section-top__price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-top__price sup {
+  font-size: 16px;
+}
+
+.cards {
+  margin-top: 40px;
+}
+
+.card-input:checked + .card {
+  border: 2px solid #8797c6;
+}
+
+.card {
+  height: 115px;
+  width: 220px;
+  padding: 8px 10px 13px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 2px solid #dedede;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.card:hover {
+  border: 2px solid #8797c6;
+}
+
+.card__number {
+  font-size: 16px;
+  color: #727272;
+  margin-top: 12px;
+}
+
+.card__valid {
+  font-size: 13px;
+  color: #727272;
+  margin-top: 6px;
+}
+
+.balance-history {
+  margin-top: 39px;
+  padding-top: 46px;
+  border-top: 1px solid #dedede;
+}
+
+.history {
+  display: flex;
+  align-items: center;
+}
+
+.history:not(:last-child) {
+  margin-bottom: 41px;
+}
+
+.history__icon {
+  margin: 4px;
+  border: 1px solid #dedede;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+
+.history-text {
+  margin-left: 28px;
+}
+
+.history-text__name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.history-text__date {
+  font-size: 13px;
+  color: #b4b4b4;
+  margin-top: 4px;
+}
+
+.history-price {
+  font-weight: 700;
+  margin-left: auto;
+  color: #8797c6;
+}
+
+.history-price sup {
+  font-size: 10px;
+}
+
+.history-price--green {
+  color: #8ace5e;
+}
+/*# sourceMappingURL=style.css.map */

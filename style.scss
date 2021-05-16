@@ -1,0 +1,185 @@
+$bg-color: #f7cd75;
+$section-wallets:#f2f2f2;
+$color-white:#fff;
+$title-color: #333;
+$color-blue:#8797c6;
+$color-green:#8ace5e;
+$wallet-font: #727272;
+$date-color: #b4b4b4;
+$border-color: #dedede;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img {
+  vertical-align: middle;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-color;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+.container {
+  padding: 40px 25px 40px 40px;
+}
+
+.main {
+  width: 800px;
+  height: 450px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 100px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.section-wallets {
+  width: 37.5%;
+  background-color: $section-wallets;
+  overflow-x: auto;
+  // &:hover {
+  //   overflow-x: auto;
+  // }
+}
+
+.section-balance {
+  width: 62.5%;
+  background-color: $color-white;
+  overflow-x: auto;
+  // &:hover .container{
+  //   padding-right: 25px;
+  // }
+  // &:hover {
+  // overflow-x: auto;
+  // }
+
+}
+
+.section-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__plus{
+    cursor: pointer;
+  }
+  &__price {
+    font-size: 24px;
+    font-weight: bold;
+
+    & sup {
+      font-size: 16px;
+    }
+  }
+}
+
+.cards {
+  margin-top: 40px;
+}
+
+.card-input:checked + .card{
+  border: 2px solid $color-blue;
+}
+
+.card {
+  height: 115px;
+  width: 220px;
+  padding: 8px 10px 13px;
+  background-color: $color-white;
+  border-radius: 6px;
+  border: 2px solid $border-color;
+  transition: all .3s ease;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &:hover{
+    border: 2px solid $color-blue;
+  }
+
+  &__number {
+    font-size: 16px;
+    color: $wallet-font;
+    margin-top: 12px;
+  }
+
+  &__valid {
+    font-size: 13px;
+    color: $wallet-font;
+    margin-top: 6px;
+  }
+}
+
+
+// ******************
+.balance-history {
+  margin-top: 39px;
+  padding-top: 46px;
+  border-top: 1px solid $border-color;
+}
+
+.history {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 41px;
+  }
+
+  &__icon {
+    margin: 4px;
+    border: 1px solid $border-color;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.history-text {
+  margin-left: 28px;
+
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &__date {
+    font-size: 13px;
+    color: $date-color;
+    margin-top: 4px;
+  }
+}
+
+.history-price {
+  font-weight: 700;
+  margin-left: auto;
+  color: $color-blue;
+
+  & sup {
+    font-size: 10px;
+  }
+
+  &--green {
+    color: $color-green;
+  }
+
+}
